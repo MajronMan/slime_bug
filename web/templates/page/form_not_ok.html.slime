@@ -1,0 +1,8 @@
+- foo = "bar"
+
+- form_not_ok = Phoenix.HTML.Tag.content_tag(:form) do
+  input name="test" value="#{foo}"
+
+p "#{foo}"
+
+= form_not_ok
